@@ -216,8 +216,18 @@ header{
     height: 100px;
     width: auto;
     float: left;
+    margin: 5px 50px;
 }
 
+.logo-black{
+    display: none;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 5px 50px;
+}
+
+/* MAIN NAVIGATION */
 .main-nav{
     float: right;
     list-style: none;
@@ -244,6 +254,30 @@ header{
 .main-nav li a:active{
     border-bottom: 2px solid #e67e22;
 }
+
+/* STICKY NAVIGATION */
+.sticky{
+    position: fixed;                            /* Stays the same even while scrolling */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .98);
+    box-shadow: 0 2px 2px #efefef;
+}
+
+.main-nav{
+    margin-top: 18px;
+    margin-right: 50px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+    padding: 12px 0;
+    color: #555;
+}
+
+.sticky .logo { display: none; }
+.sticky .logo-black { display: block; }
 
 /* ------------------------------------------ */
 /*                 FEATURE                    */
